@@ -35,7 +35,7 @@ public class FollowPath : MonoBehaviour
             //move from current wp to next using MoveTowards method
             transform.position = Vector3.MoveTowards(transform.position, waypoints[wpI].transform.position, moveSpeed * Time.deltaTime);
 
-            //If enemy reches waypoint, increase index by 1
+            //If enemy reaches waypoint, increase index by 1
             if(transform.position == waypoints[wpI].transform.position){
                 wpI += 1;
             }
